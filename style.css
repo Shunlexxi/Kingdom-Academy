@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #262626;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-bar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 2%;
+}
+
+.nav-brand {
+    font-size: 2rem;
+}
+
+.navMenu {
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px; 
+}
+
+/* trasnsition effect on hover*/
+.navLink {
+    transition: 0.7s ease;
+}
+
+.navLink:hover {
+    color: dodgerblue;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+     /*margin : top & bottom, left & right*/
+    margin: 5px 1rem;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/*media query - used to display button at 768px*/
+@media(max-width:768px){
+    .hamburger {
+        display: block;
+    }
+
+/*creating a change state for harmburger when clicked*/
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    } 
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+/*creating a change state for navMenu; hiding */
+    .navMenu{
+        left: -100%;
+        position: fixed;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+        color: blue;
+    }
+
+    .navMenu.active{
+        left: 0;
+    }
+}
+
+#welcome {
+    background-color: dodgerblue;
+    padding: 20px;
+    color: #fff;
+
+}
+
+h1 {
+    color: #fff;
+    margin: 10px;
+}
+
+#About {
+    background-color: dodgerblue;
+    padding: 20px;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+#events{
+    background-color: dodgerblue;
+    padding: 20px;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+#event-entry{
+    display: inline-block;
+}
+
+#pad{
+    
+    padding-top: 3px;
+}
+
+footer{
+    background-color: #262626;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+
+}
