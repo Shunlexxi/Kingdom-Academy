@@ -101,8 +101,59 @@ a {
     }
 }
 
+/* styling arrows for image slider*/
+
+#img-slider{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    border-radius: 50%;
+    margin: 15px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.circle:hover {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+#arrLeft {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-top: 8px solid #262626;
+    border-left: 8px solid #262626;
+    transform: rotate(-45deg);
+    left: 30px;
+    top: 30px;
+}
+
+#arrRight {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-top: 8px solid #262626;
+    border-right: 8px solid #262626;
+    transform: rotate(45deg);
+    left: 20px;
+    top: 30px;
+}
+
+
+
+
+
+
 #welcome {
-    background-color: dodgerblue;
+    background: linear-gradient(#7C909B, #9cafab);
     padding: 20px;
     color: #fff;
 
