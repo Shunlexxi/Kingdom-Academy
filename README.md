@@ -26,6 +26,7 @@ VS Code, GitHub Code Space
 
 ### Deployment:
 Github Pages
+https://shunlexxi.github.io/Kingdom-Academy/
 
 ### GitHub Student Developer Pack Tools Used
 GitHub, Typeform, Push Bots. 
